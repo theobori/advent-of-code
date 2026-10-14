@@ -64,8 +64,8 @@ let
         let
           problems' = range 1 problemsAmount;
           problems = listToAttrs (
-            builtins.map (problem: {
-              name = builtins.toString problem;
+            map (problem: {
+              name = toString problem;
               value = problem;
             }) problems'
           );
