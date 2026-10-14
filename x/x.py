@@ -81,6 +81,8 @@ def main() -> NoReturn | None:
         logger.error("You must specify a subcommand")
         exit(1)
 
+    # TODO: create a base directory for a given problem
+    # including base files.
     match argv[1]:
         case "run":
             x_run("./")
