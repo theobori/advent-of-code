@@ -1,6 +1,6 @@
 """The statistics module."""
 
-from typing import NoReturn, Dict, List
+from typing import Dict, List
 from pathlib import Path
 from collections import defaultdict
 from dataclasses import dataclass
@@ -110,7 +110,7 @@ def _statistics_create_markdown_table(statistics_year: StatisticsYear) -> str:
 
 def _statistics_write_as_markdown(
     statistics: Statistics, directory_path: Path, filename: str = "README.md"
-) -> NoReturn:
+) -> None:
     """_summary_
 
     Args:
@@ -119,7 +119,7 @@ def _statistics_write_as_markdown(
         filename (str, optional): The markdown filename. Defaults to "README.md".
 
     Returns:
-        NoReturn: No return.
+        None: None.
     """
 
     for year, statistics_year in statistics.statistics.items():
@@ -148,14 +148,14 @@ def _statistics_write_as_markdown(
         )
 
 
-def statistics_create_readme_files(directory_path: Path) -> NoReturn:
+def statistics_create_readme_files(directory_path: Path) -> None:
     """Create a README markdown file with problem-solving statistics.
 
     Args:
         directory_path (Path): The directory path.
 
     Returns:
-        NoReturn: No return.
+        None: None.
     """
 
     statistics = statistics_create_from_directory(directory_path)

@@ -24,11 +24,11 @@ from x.statistics import statistics_create_readme_files
 from loguru import logger
 
 
-def x_run(directory_path: Path) -> NoReturn:
+def x_run(directory_path: Path) -> NoReturn | None:
     """Run the Advent Of Code solution.
 
     Returns:
-        NoReturn: No return.
+        NoReturn | None: No return or None.
     """
 
     if len(argv) < 5:
@@ -70,11 +70,11 @@ def x_run(directory_path: Path) -> NoReturn:
     print(run_output, end="")
 
 
-def main() -> NoReturn:
+def main() -> NoReturn | None:
     """The project entry point.
 
     Returns:
-        NoReturn: No return.
+        NoReturn | None: No return or None.
     """
 
     if len(argv) < 2:
