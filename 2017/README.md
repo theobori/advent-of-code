@@ -1,6 +1,6 @@
 # My Advent Of Code statistics for 2017
 
-I completed it **28.00% (14/50)**, here's a table showing my problem-solving statistics for the year 2017.
+I completed it **32.00% (16/50)**, here's a table showing my problem-solving statistics for the year 2017.
 
 | Day | First part | Second part |
 | - | - | - |
@@ -11,7 +11,7 @@ I completed it **28.00% (14/50)**, here's a table showing my problem-solving sta
 | **5** | Yes | Yes |
 | **6** | Yes | Yes |
 | **7** | Yes | Yes |
-| **8** | No | No |
+| **8** | Yes | Yes |
 | **9** | No | No |
 | **10** | No | No |
 | **11** | No | No |
