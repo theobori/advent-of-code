@@ -16,18 +16,8 @@
       system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-
         treefmtEval = treefmt-nix.lib.evalModule pkgs ./treefmt.nix;
-        aoc-solutions = pkgs.callPackage ./default.nix {
-          inherit (pkgs.python3Packages)
-            buildPythonApplication
-            setuptools
-            numpy
-            shapely
-            loguru
-            pydantic
-            ;
-        };
+        aoc-solutions = pkgs.python3Packages.callPackage ./default.nix { };
       in
       {
         packages = {
